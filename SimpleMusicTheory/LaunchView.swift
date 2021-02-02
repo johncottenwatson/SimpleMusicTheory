@@ -12,9 +12,9 @@ struct LaunchView: View {
         ZStack() {
             ColorPalette.blue
                 .ignoresSafeArea()
-            Text("Simple Music Theory")
+            Text("Simple\nMusic\nTheory")
                 .foregroundColor(ColorPalette.white)
-                .font(.system(size: 32, design: .rounded))
+                .font(.system(size: 48, design: .rounded))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
         }
     }

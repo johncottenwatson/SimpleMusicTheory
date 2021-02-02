@@ -35,7 +35,7 @@ struct ProgressBar: View {
     }
 }
 
-struct SizeKey: PreferenceKey {
+fileprivate struct SizeKey: PreferenceKey {
     static func reduce(value: inout CGSize?, nextValue: () -> CGSize?) {
         value = value ?? nextValue()
     }

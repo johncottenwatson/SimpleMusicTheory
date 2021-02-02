@@ -10,6 +10,9 @@ import Combine
 
 public struct Metronome: View {
     
+    let animationDuration: Double = 0.08
+    let emphasisScaleFactor: CGFloat = 1.35
+    
     let smallerCircleConstrictedDiameter: CGFloat = 60
     let smallerCircleDilatedDiameter: CGFloat = 90
     let largerCircleConstrictedDiameter: CGFloat = 60
@@ -20,29 +23,47 @@ public struct Metronome: View {
     @Binding var exerciseState: ExerciseState
     
     // Period of metronome in seconds
-    let period: Float
+    let period: Double
     @State var metronomeInstrument: MetronomeInstrument!
     
-    @State var timer = Timer.publish(every: 0, on: .main, in: .common).autoconnect()
+    // Optional numBeats field creates beat-counting subtext
+    let numBeats: Int?
+    
+    @State var timer = Timer.publish(every: TimeInterval(Int.max), on: .main, in: .common).autoconnect()
     @State var timerCounter = 0
     
     private func start() {
-        timer = Timer.publish(every: Double(period / 2.0), on: .main, in: .common).autoconnect()
+        timer = Timer.publish(every: period / 2.0, on: .main, in: .common).autoconnect()
         metronomeInstrument = MetronomeInstrument()
         metronomeInstrument.start()
         self.alreadyStarted = true
     }
     
     public var body: some View {
-        ZStack() {
-            // Larger circle
-            Circle()
-                .frame(width: dilated ? largerCircleDilatedDiameter : largerCircleConstrictedDiameter)
-                .foregroundColor(ColorPalette.pink)
-            // Smaller circle
-            Circle()
-                .frame(width: dilated ? smallerCircleDilatedDiameter : smallerCircleConstrictedDiameter)
-                .foregroundColor(ColorPalette.white)
+        VStack() {
+            ZStack() {
+                // Larger circle
+                Circle()
+                    .frame(width: dilated ? largerCircleDilatedDiameter : largerCircleConstrictedDiameter)
+                    .foregroundColor(ColorPalette.pink)
+                // Smaller circle
+                Circle()
+                    .frame(width: dilated ? smallerCircleDilatedDiameter : smallerCircleConstrictedDiameter)
+                    .foregroundColor(ColorPalette.white)
+            }
+            if numBeats != nil {
+                HStack(alignment: .top) {
+                    ForEach(0 ..< numBeats!) { index in
+                        Text("\(index + 1)")
+                            .font(.system(.largeTitle, design: .rounded))
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(ColorPalette.white)
+                            .scaleEffect(((timerCounter / 2) % numBeats! == index) ? emphasisScaleFactor : 1.0)
+                            .animation(.easeInOut(duration: animationDuration), value: timerCounter)
+                            .padding()
+                    }
+                }
+            }
         }.onAppear() {
             if !self.alreadyStarted && exerciseState == .active {
                 self.start()

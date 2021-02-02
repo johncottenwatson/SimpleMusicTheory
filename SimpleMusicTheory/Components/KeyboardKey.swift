@@ -10,6 +10,7 @@ import SwiftUI
 struct KeyboardKey: View {
     
     let keySize: CGFloat
+    let letterNames: Bool
     let isMonophonic: Bool
     var note: Note
     
@@ -47,7 +48,7 @@ struct KeyboardKey: View {
                     .frame(width: keySize, height: keySize)
                     .cornerRadius(8.0)
                     .foregroundColor(getRectangleColor(isSelected: isSelected, exerciseState: exerciseState))
-                Text(note.name)
+                Text(letterNames ? note.name : "\(note.pitchClass.rawValue + 1)")
                     .font(.system(.title2, design: .rounded))
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .foregroundColor(isSelected ? ColorPalette.white : ColorPalette.darkBlue)

@@ -9,8 +9,11 @@ import SwiftUI
 
 public struct Keyboard: View {
 
+    let lowestOctave = 4
     let accidentalsOffsetRatios: [CGFloat] = [0.5, 0.5, 1.75, 1.75, 1.75]
 
+    let numOctaves: Int
+    let letterNames: Bool
     let isFlatLayout: Bool
     let isMonophonic: Bool
     
@@ -29,21 +32,21 @@ public struct Keyboard: View {
     @State var keyboardInstrument: KeyboardInstrument!
 
     private func start() {
-        keyboardInstrument = KeyboardInstrument()
+        keyboardInstrument = KeyboardInstrument(numOctaves: numOctaves)
         keyboardInstrument.start()
         self.alreadyStarted = true
     }
 
     public var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack() {
-                ForEach(4...5, id: \.self) { octave in
+            HStack(alignment: .bottom) {
+                ForEach(lowestOctave ..< lowestOctave + numOctaves, id: \.self) { octave in
                     if isFlatLayout {
                         // Flat keyboard layout
                         HStack() {
-                            ForEach(0..<12) { index in
+                            ForEach(0 ..< 12) { index in
                                 let note = Note(pitchClass: PitchClass(rawValue: index)!, octave: octave)
-                                KeyboardKey(keySize: self.keySize, isMonophonic: isMonophonic, note: note, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
+                                KeyboardKey(keySize: self.keySize, letterNames: letterNames, isMonophonic: isMonophonic, note: note, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
                             }
                         }
                     } else {
@@ -53,7 +56,7 @@ public struct Keyboard: View {
                             HStack() {
                                 ForEach(0..<5) { accidentalsIndex in
                                     let note = Note(pitchClass: PitchClass.accidentals[accidentalsIndex], octave: octave)
-                                    KeyboardKey(keySize: self.keySize, isMonophonic: isMonophonic, note: note, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
+                                    KeyboardKey(keySize: self.keySize, letterNames: letterNames, isMonophonic: isMonophonic, note: note, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
                                         .offset(x: keySize * accidentalsOffsetRatios[accidentalsIndex])
                                 }
                             }
@@ -61,12 +64,15 @@ public struct Keyboard: View {
                             HStack() {
                                 ForEach(0..<7) { naturalsIndex in
                                     let note = Note(pitchClass: PitchClass.naturals[naturalsIndex], octave: octave)
-                                    KeyboardKey(keySize: self.keySize, isMonophonic: isMonophonic, note: note, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
+                                    KeyboardKey(keySize: self.keySize, letterNames: letterNames, isMonophonic: isMonophonic, note: note, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
                                 }
                             }
                         }
                     }
                 }
+                // Final note
+                let finalNote = Note(pitchClass: .c, octave: lowestOctave + numOctaves)
+                KeyboardKey(keySize: self.keySize, letterNames: letterNames, isMonophonic: isMonophonic, note: finalNote, notes: $notes, exerciseState: $exerciseState, correctPitchClassSet: correctPitchClassSet)
             }.disabled(exerciseState != .active)
             .padding(.horizontal, 8.0)
         }.onAppear() {
@@ -91,7 +97,7 @@ struct Keyboard_Previews: PreviewProvider {
         ZStack() {
             ColorPalette.blue
                 .ignoresSafeArea()
-            Keyboard(isFlatLayout: false, isMonophonic: false, exerciseState: .constant(.active), notes: .constant([]), correctPitchClassSet: [])
+            Keyboard(numOctaves: 2, letterNames: true, isFlatLayout: false, isMonophonic: false, exerciseState: .constant(.active), notes: .constant([]), correctPitchClassSet: [])
         }
     }
 }

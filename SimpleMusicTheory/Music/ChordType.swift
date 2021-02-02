@@ -50,6 +50,12 @@ public enum ChordType {
         }
     }
     
+    var intervalsString: String {
+        var array = intervals.map { String($0) }
+        array[0] = "root"
+        return array.joined(separator: " ")
+    }
+    
     var name: String {
         switch(self) {
         case .major:
@@ -105,6 +111,67 @@ public enum ChordType {
             return "augmented"
         case .sixth:
             return "sixth"
+        }
+    }
+    
+    var description: String {
+        switch(self) {
+        case .major:
+            return "a common chord type that sounds very consonant"
+        case .minor:
+            return "common chord type that is also very consonant, but usually sounds darker than a major chord"
+        case .majorAddNinth:
+            return "NOT YET IMPLEMENTED"
+        case .minorAddNinth:
+            return "NOT YET IMPLEMENTED"
+        case .majorSeventh:
+            return "a jazzy chord type that sounds like a softer version of a major chord"
+        case .minorSeventh:
+            return "a jazzy chord type that sounds like a softer version of a minor chord"
+        case .dominantSeventh:
+            return "an unstable chord type that wants to be resolved into a more consonant chord"
+        case .suspendedSecond:
+            return "another simple chord type with a somewhat ambiguous feeling"
+        case .suspendedFourth:
+            return "another simple chord type with a somewhat ambiguous feeling"
+        case .diminished:
+            return "an unstable chord type that wants to be resolved into a more consonant chord"
+        case .augmented:
+            return "another unstable chord type that wants to be resolved into a more consonant chord"
+        case .sixth:
+            return "another jazzy chord type that feels like a softer version of a major chord"
+        }
+    }
+    
+    var remarkSentence: String? {
+        switch(self) {
+        case .major:
+            return "To make a major chord, you need 3 notes:\n\n"
+                + "A root note\n"
+                + "The note 4 semitones above the root note\n"
+                + "The note 7 semitones above the root note"
+        case .minor:
+            return "A minor chord is just a major chord with the middle note a semitone lower."
+        case .majorAddNinth:
+            return "NOT YET IMPLEMENTED"
+        case .minorAddNinth:
+            return "NOT YET IMPLEMENTED"
+        case .majorSeventh:
+            return "A major seventh chord is a major chord with the note 11 semitones above the root added on."
+        case .minorSeventh:
+            return "A minor seventh chord is a minor chord with the note 10 semitones above the root added on."
+        case .dominantSeventh:
+            return "A dominant seventh chord is just a major chord with the note 10 semitones above the root added on."
+        case .suspendedSecond:
+            return nil
+        case .suspendedFourth:
+            return nil
+        case .diminished:
+            return "A diminished chord is just a minor chord with the third note a semitone lower."
+        case .augmented:
+            return "An augmented chord is just a major chord with the third note a semitone higher."
+        case .sixth:
+            return "A major seventh chord is a major chord with the note 9 semitones above the root added on."
         }
     }
 }

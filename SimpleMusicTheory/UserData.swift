@@ -10,8 +10,6 @@ import SwiftUI
 class UserData: ObservableObject {
     
     init() {
-        //let str = "01101001001"
-        //str[str.index(str.startIndex, offsetBy: 0)]
     }
 
     @AppStorage(wrappedValue: false, "postFirstLaunch") var postFirstLaunch: Bool

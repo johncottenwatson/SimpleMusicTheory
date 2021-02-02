@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum PitchClass: Int {
+public enum PitchClass: Int, CaseIterable {
     static let numPitchClasses = 12
     static let naturals: Array<PitchClass> = [.c, .d, .e, .f, .g, .a, .b]
     static let accidentals: Array<PitchClass> = [.cSharp, .dSharp, .fSharp, .gSharp, .aSharp]
@@ -65,6 +65,6 @@ public enum PitchClass: Int {
     }
     
     public static func random() -> PitchClass {
-        return PitchClass(rawValue: Int.random(in: 0..<numPitchClasses))!
+        return PitchClass(rawValue: Int.random(in: 0 ..< numPitchClasses))!
     }
 }

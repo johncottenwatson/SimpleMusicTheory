@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Chord {
+public struct Chord: Hashable {
     public var root: PitchClass
     public var chordType: ChordType
     
@@ -30,5 +30,9 @@ public struct Chord {
     public func sharesPitchClasses(noteSet: Set<Note>) -> Bool {
         let otherPitchClassSet = Set(noteSet.map( {$0.pitchClass} ))
         return self.pitchClassSet == otherPitchClassSet
+    }
+    
+    public static func random(legalChordTypes: Set<ChordType>) -> Chord {
+        return Chord(root: PitchClass.random(), chordType: legalChordTypes.randomElement() ?? .major)
     }
 }

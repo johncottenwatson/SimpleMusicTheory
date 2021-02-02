@@ -18,7 +18,7 @@ public class MetronomeInstrument: Instrument {
     public override init() {
         sampler = AKAppleSampler()
         do {
-            try sampler.loadWav("shaker")
+            try sampler.loadWav("woodblock")
         } catch {
             AKLog("Problem loading wav")
         }

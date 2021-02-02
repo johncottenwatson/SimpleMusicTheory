@@ -12,9 +12,3 @@ extension Comparable {
         return min(max(self, limits.lowerBound), limits.upperBound)
     }
 }
-
-public func mod(_ a: Int, _ n: Int) -> Int {
-    precondition(n > 0, "modulus must be positive")
-    let result = a % n
-    return (result >= 0) ? result : result + n
-}

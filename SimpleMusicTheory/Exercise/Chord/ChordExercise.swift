@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ChordExercise: View {
 
-    let exerciseNum: Int
     let isFlatLayout: Bool
     let chord: Chord
     
@@ -19,20 +18,11 @@ struct ChordExercise: View {
     
     var body: some View {
         VStack() {
-            HStack() {
-                DescriptionText(text: Text("Select the notes in a ")
-                                    + Text(chord.name).bold()
-                                    + Text(" chord."))
-                    .font(.system(.title2, design: .rounded))
-                    .multilineTextAlignment(.leading)
-                    .foregroundColor(ColorPalette.white)
-                    .padding()
-                    .layoutPriority(1)
-                Spacer()
-                    .frame(minWidth: 0, idealWidth: 0)
-            }
+            DescriptionText(text: Text("Select the notes in a ")
+                                + Text("\(chord.longName)").bold()
+                                + Text(" (\(chord.name)) chord."))
             Spacer()            
-            Keyboard(isFlatLayout: isFlatLayout, isMonophonic: false, exerciseState: $exerciseState, notes: $notes, correctPitchClassSet: chord.pitchClassSet)
+            Keyboard(numOctaves: 2, letterNames: true, isFlatLayout: isFlatLayout, isMonophonic: false, exerciseState: $exerciseState, notes: $notes, correctPitchClassSet: chord.pitchClassSet)
             
             CheckButton(exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)
         }.onChange(of: exerciseState) { newState in
@@ -45,14 +35,14 @@ struct ChordExercise: View {
 }
 
 struct ChordExercise_Previews: PreviewProvider {
-    
+
     static let chord = Chord(root: .c, chordType: .major)
     
     static var previews: some View {
         ZStack() {
             ColorPalette.blue
                 .ignoresSafeArea()
-            ChordExercise(exerciseNum: 0, isFlatLayout: false, chord: chord, exerciseState: .constant(.active), exerciseCorrect: .constant(false))
+            ChordExercise(isFlatLayout: false, chord: chord, exerciseState: .constant(.active), exerciseCorrect: .constant(false))
         }
     }
 }

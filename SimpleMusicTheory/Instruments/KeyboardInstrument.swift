@@ -10,16 +10,18 @@ import AudioKit
 
 public class KeyboardInstrument: Instrument {
 
+    let numOctaves: Int
     let lowestOctave = 4
-    let numOctaves = 2
     let rampDuration = 0.25
+    let boosterGain = 0.1
     
     private var mixer: AKMixer
     private var booster: AKBooster
     
     private var oscDictionary: [Note: AKOscillator] = [:]
     
-    public override init() {
+    public init(numOctaves: Int) {
+        self.numOctaves = numOctaves
         mixer = AKMixer()
         for octave in lowestOctave ..< lowestOctave + numOctaves {
             for pitchClassIndex in 0 ..< PitchClass.numPitchClasses {
@@ -30,6 +32,11 @@ public class KeyboardInstrument: Instrument {
                 mixer.connect(input: osc)
             }
         }
+        let lastNote = Note(pitchClass: .c, octave: lowestOctave + numOctaves)
+        let osc = AKOscillator(waveform: Wavetables.triangle, frequency: lastNote.frequency, amplitude: 0.0)
+        osc.rampDuration = 0.15
+        oscDictionary[lastNote] = osc
+        mixer.connect(input: osc)
         
         booster = AKBooster(mixer)
         booster.gain = 0.0
@@ -47,7 +54,7 @@ public class KeyboardInstrument: Instrument {
     }
     
     private func noteOn(_ note: Note) {
-        oscDictionary[note]?.amplitude = 1.0
+        oscDictionary[note]?.amplitude = normalizingFactor(frequency: note.frequency)
     }
     
     private func noteOff(_ note: Note) {
@@ -56,7 +63,7 @@ public class KeyboardInstrument: Instrument {
     
     public override func start() {
         AudioManager.mainMixer.connect(input: booster)
-        booster.gain = 1.0
+        booster.gain = boosterGain
         
         oscDictionary.values.forEach {
             $0.start()
@@ -74,7 +81,6 @@ public class KeyboardInstrument: Instrument {
             self.booster.detach()
         }
 
-        //AudioManager.mainMixer.disconnectInput()
         print(AKManager.engine.attachedNodes.count)
     }
 }

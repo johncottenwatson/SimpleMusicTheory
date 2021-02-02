@@ -16,6 +16,7 @@ public class AudioManager {
     
     // TEMP: Start method in place of init to counteract lazy initialization of static singleton
     public static func start() {
+        AKSettings.playbackWhileMuted = true
         AKManager.output = AudioManager.mainMixer
         do {
             try AKManager.start()

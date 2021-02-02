@@ -28,6 +28,8 @@ struct ContinueButton: View {
         }
         .frame(height: 60)
         .padding()
+        .opacity(exerciseState < .answered ? 0 : 1)
+        .disabled(exerciseState < .answered)
     }
 }
 

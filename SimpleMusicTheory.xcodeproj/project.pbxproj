@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF035D9625C77ADB00FEB3EB /* StandardKeyboardIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF035D9525C77ADB00FEB3EB /* StandardKeyboardIntroductionExercise.swift */; };
 		EF12C29E25B5FAAB00356E9A /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12C29D25B5FAAB00356E9A /* Chord.swift */; };
 		EF12C2A025B5FB2700356E9A /* ChordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12C29F25B5FB2700356E9A /* ChordType.swift */; };
 		EF12C2A225B6086900356E9A /* KeyboardInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12C2A125B6086900356E9A /* KeyboardInstrument.swift */; };
@@ -17,6 +18,8 @@
 		EF1E408225B0F64300A46228 /* SoundExercise1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E408125B0F64300A46228 /* SoundExercise1.swift */; };
 		EF2DA6CF2583FD9C00634204 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DA6CE2583FD9C00634204 /* UserData.swift */; };
 		EF31F98025813CBC007FD352 /* LessonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31F97F25813CBC007FD352 /* LessonType.swift */; };
+		EF39541725C0BC03009CF6DD /* shaker.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF39541625C0BC03009CF6DD /* shaker.wav */; };
+		EF39541925C0BC07009CF6DD /* woodblock.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF39541825C0BC07009CF6DD /* woodblock.wav */; };
 		EF3F98FD25A9053400FC3BAC /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F98FC25A9053400FC3BAC /* ProgressBar.swift */; };
 		EF5049FD25802C1400CF6C22 /* LessonGlyphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5049FC25802C1400CF6C22 /* LessonGlyphView.swift */; };
 		EF504A042580360100CF6C22 /* PageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF504A032580360100CF6C22 /* PageState.swift */; };
@@ -25,11 +28,32 @@
 		EF64F33225B15D9100BD39F1 /* MetronomeInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64F33125B15D9100BD39F1 /* MetronomeInstrument.swift */; };
 		EF64F33425B1626C00BD39F1 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64F33325B1626C00BD39F1 /* AudioManager.swift */; };
 		EF71C99C25B365F80006E7FF /* ChordExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71C99B25B365F80006E7FF /* ChordExercise.swift */; };
-		EF71C9A225B370BB0006E7FF /* shaker.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF71C9A125B370BB0006E7FF /* shaker.wav */; };
+		EF722DCD25C1FEB2000A4AFE /* SoundExercise5.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF722DCC25C1FEB2000A4AFE /* SoundExercise5.swift */; };
+		EF722DCF25C20228000A4AFE /* HertzSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF722DCE25C20228000A4AFE /* HertzSpectrum.swift */; };
 		EF73095C25A7C382006EB4B9 /* LessonSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF73095B25A7C382006EB4B9 /* LessonSummary.swift */; };
+		EF8C0CF325C673190016FABF /* HarmonyIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0CF225C673190016FABF /* HarmonyIntroductionExercise.swift */; };
+		EF8C0CF525C673270016FABF /* OctaveIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0CF425C673270016FABF /* OctaveIntroductionExercise.swift */; };
+		EF8C0CF725C673350016FABF /* NoteIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0CF625C673350016FABF /* NoteIntroductionExercise.swift */; };
+		EF8C0CFB25C6736E0016FABF /* TwelveNotesIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0CFA25C6736E0016FABF /* TwelveNotesIntroductionExercise.swift */; };
+		EF8C0CFD25C6737E0016FABF /* LetterNamesIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0CFC25C6737E0016FABF /* LetterNamesIntroductionExercise.swift */; };
+		EF8C0CFF25C673940016FABF /* SemitoneIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0CFE25C673940016FABF /* SemitoneIntroductionExercise.swift */; };
+		EF8C0D0225C687D70016FABF /* HarmonySliderPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0D0125C687D70016FABF /* HarmonySliderPair.swift */; };
+		EF8C0D0425C689830016FABF /* HarmonySliderPairInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0D0325C689830016FABF /* HarmonySliderPairInstrument.swift */; };
+		EF8C0D0825C68D3C0016FABF /* PitchPlayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0D0725C68D3C0016FABF /* PitchPlayerGroup.swift */; };
+		EF8C0D0C25C68FBF0016FABF /* PitchPlayerGroupInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C0D0B25C68FBF0016FABF /* PitchPlayerGroupInstrument.swift */; };
 		EF8C1B9925AE79BA00EFA058 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8C1B9825AE79BA00EFA058 /* CheckButton.swift */; };
 		EF8C1BA025AE94DA00EFA058 /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8C1B9D25AE94CE00EFA058 /* AudioKit.xcframework */; };
 		EF8C1BA125AE94DA00EFA058 /* AudioKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF8C1B9D25AE94CE00EFA058 /* AudioKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF90F85725C8736D002435E8 /* NewScaleIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90F85625C8736D002435E8 /* NewScaleIntroductionExercise.swift */; };
+		EF90F85925C881F9002435E8 /* MultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90F85825C881F9002435E8 /* MultipleChoice.swift */; };
+		EF90F85C25C8865C002435E8 /* MultipleChoiceSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90F85B25C8865C002435E8 /* MultipleChoiceSquare.swift */; };
+		EF90F85E25C88A3C002435E8 /* ChordMultipleChoiceExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90F85D25C88A3C002435E8 /* ChordMultipleChoiceExercise.swift */; };
+		EF90F86025C89699002435E8 /* ChordIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90F85F25C89699002435E8 /* ChordIntroductionExercise.swift */; };
+		EF90F86225C898FF002435E8 /* ScaleIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90F86125C898FF002435E8 /* ScaleIntroductionExercise.swift */; };
+		EF9A5E5B25C0F26C00AC5EC6 /* woodblockNoDelay.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9A5E5A25C0F26C00AC5EC6 /* woodblockNoDelay.wav */; };
+		EF9A5E5D25C0F27400AC5EC6 /* shakerNoDelay.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9A5E5C25C0F27400AC5EC6 /* shakerNoDelay.wav */; };
+		EF9A5E5F25C1023F00AC5EC6 /* SoundExercise4.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A5E5E25C1023F00AC5EC6 /* SoundExercise4.swift */; };
+		EF9A5E6125C1048D00AC5EC6 /* FormWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A5E6025C1048D00AC5EC6 /* FormWheel.swift */; };
 		EFA2B693259BA148008E4411 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2B692259BA148008E4411 /* Extensions.swift */; };
 		EFA5C64A25782F4F00B981F7 /* SimpleMusicTheoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5C64925782F4F00B981F7 /* SimpleMusicTheoryApp.swift */; };
 		EFA5C64C25782F4F00B981F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5C64B25782F4F00B981F7 /* ContentView.swift */; };
@@ -41,11 +65,38 @@
 		EFA5C66325783F8600B981F7 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5C66225783F8600B981F7 /* ColorPalette.swift */; };
 		EFA9120A25B3D4D7000330BE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9120925B3D4D7000330BE /* Note.swift */; };
 		EFA9120C25B3D504000330BE /* PitchClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9120B25B3D504000330BE /* PitchClass.swift */; };
+		EFA9B18025C7D6F1002B467F /* NewBeatIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9B17F25C7D6F1002B467F /* NewBeatIntroductionExercise.swift */; };
+		EFA9B18325C7DF90002B467F /* NewChordIntroductionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9B18225C7DF90002B467F /* NewChordIntroductionExercise.swift */; };
+		EFB90EDB25C3786C00977D5E /* SoundExercise3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90EDA25C3786C00977D5E /* SoundExercise3.swift */; };
+		EFB90EDE25C379D600977D5E /* RhythmToPitchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90EDD25C379D600977D5E /* RhythmToPitchSlider.swift */; };
+		EFB90EE025C37DDB00977D5E /* RhythmToPitchInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90EDF25C37DDB00977D5E /* RhythmToPitchInstrument.swift */; };
+		EFBD270A25C490B5000892FF /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD270925C490B5000892FF /* Functions.swift */; };
 		EFD3488025B664630093C8B6 /* SemitonesExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD3487F25B664630093C8B6 /* SemitonesExercise.swift */; };
+		EFD90CC725C244A200FA4F29 /* SoundExercise2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD90CC625C244A200FA4F29 /* SoundExercise2.swift */; };
+		EFD90CC925C2450600FA4F29 /* RhythmSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD90CC825C2450600FA4F29 /* RhythmSlider.swift */; };
+		EFDFE63425BF9F03007E6D43 /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFE63325BF9F03007E6D43 /* Rhythm.swift */; };
+		EFDFE63625BFA20A007E6D43 /* RhythmKitInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFE63525BFA20A007E6D43 /* RhythmKitInstrument.swift */; };
+		EFDFE63A25BFA5A3007E6D43 /* RhythmKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFE63925BFA5A3007E6D43 /* RhythmKit.swift */; };
+		EFDFE63C25BFC3E4007E6D43 /* RhythmExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFE63B25BFC3E4007E6D43 /* RhythmExercise.swift */; };
+		EFDFE63E25BFDDC7007E6D43 /* RhythmKitKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFE63D25BFDDC7007E6D43 /* RhythmKitKey.swift */; };
 		EFE344DB25B3B50B00561D21 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE344DA25B3B50B00561D21 /* Lesson.swift */; };
 		EFE344DF25B3BA5C00561D21 /* DescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE344DE25B3BA5C00561D21 /* DescriptionText.swift */; };
 		EFE344E125B3BE7400561D21 /* ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE344E025B3BE7400561D21 /* ExerciseGeneration.swift */; };
+		EFEA6F4B25BBBC320047895F /* SoundExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F4A25BBBC320047895F /* SoundExerciseGeneration.swift */; };
+		EFEA6F4D25BBBCB50047895F /* TwelveNotesExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F4C25BBBCB50047895F /* TwelveNotesExerciseGeneration.swift */; };
+		EFEA6F4F25BBBCC30047895F /* Rhythm1ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F4E25BBBCC30047895F /* Rhythm1ExerciseGeneration.swift */; };
+		EFEA6F5125BBBCD20047895F /* Chord1ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5025BBBCD20047895F /* Chord1ExerciseGeneration.swift */; };
+		EFEA6F5325BBBCE00047895F /* Chord2ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5225BBBCDF0047895F /* Chord2ExerciseGeneration.swift */; };
+		EFEA6F5525BBBCF20047895F /* Scale1ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5425BBBCF20047895F /* Scale1ExerciseGeneration.swift */; };
+		EFEA6F5725BBBD110047895F /* Chord3ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5625BBBD110047895F /* Chord3ExerciseGeneration.swift */; };
+		EFEA6F5925BBBD1E0047895F /* Rhythm3ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5825BBBD1E0047895F /* Rhythm3ExerciseGeneration.swift */; };
+		EFEA6F5B25BBBD2A0047895F /* Scale2ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5A25BBBD2A0047895F /* Scale2ExerciseGeneration.swift */; };
+		EFEA6F5D25BBBD370047895F /* Chord4ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5C25BBBD370047895F /* Chord4ExerciseGeneration.swift */; };
+		EFEA6F5F25BBBE670047895F /* Rhythm2ExerciseGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA6F5E25BBBE670047895F /* Rhythm2ExerciseGeneration.swift */; };
 		EFF903C825B2697F0035A793 /* ExerciseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF903C725B2697F0035A793 /* ExerciseState.swift */; };
+		EFFCF9F725BCF72F00AD9B87 /* ScaleExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF9F625BCF72F00AD9B87 /* ScaleExercise.swift */; };
+		EFFCF9F925BCF82300AD9B87 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF9F825BCF82300AD9B87 /* Scale.swift */; };
+		EFFCF9FB25BCF83000AD9B87 /* ScaleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF9FA25BCF83000AD9B87 /* ScaleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +114,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF035D9525C77ADB00FEB3EB /* StandardKeyboardIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardIntroductionExercise.swift; sourceTree = "<group>"; };
 		EF12C29D25B5FAAB00356E9A /* Chord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
 		EF12C29F25B5FB2700356E9A /* ChordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordType.swift; sourceTree = "<group>"; };
 		EF12C2A125B6086900356E9A /* KeyboardInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInstrument.swift; sourceTree = "<group>"; };
@@ -73,6 +125,8 @@
 		EF1E408125B0F64300A46228 /* SoundExercise1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExercise1.swift; sourceTree = "<group>"; };
 		EF2DA6CE2583FD9C00634204 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		EF31F97F25813CBC007FD352 /* LessonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonType.swift; sourceTree = "<group>"; };
+		EF39541625C0BC03009CF6DD /* shaker.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shaker.wav; sourceTree = "<group>"; };
+		EF39541825C0BC07009CF6DD /* woodblock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = woodblock.wav; sourceTree = "<group>"; };
 		EF3F98FC25A9053400FC3BAC /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		EF5049FC25802C1400CF6C22 /* LessonGlyphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonGlyphView.swift; sourceTree = "<group>"; };
 		EF504A032580360100CF6C22 /* PageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageState.swift; sourceTree = "<group>"; };
@@ -81,10 +135,31 @@
 		EF64F33125B15D9100BD39F1 /* MetronomeInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeInstrument.swift; sourceTree = "<group>"; };
 		EF64F33325B1626C00BD39F1 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		EF71C99B25B365F80006E7FF /* ChordExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordExercise.swift; sourceTree = "<group>"; };
-		EF71C9A125B370BB0006E7FF /* shaker.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shaker.wav; sourceTree = "<group>"; };
+		EF722DCC25C1FEB2000A4AFE /* SoundExercise5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExercise5.swift; sourceTree = "<group>"; };
+		EF722DCE25C20228000A4AFE /* HertzSpectrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HertzSpectrum.swift; sourceTree = "<group>"; };
 		EF73095B25A7C382006EB4B9 /* LessonSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonSummary.swift; sourceTree = "<group>"; };
+		EF8C0CF225C673190016FABF /* HarmonyIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF8C0CF425C673270016FABF /* OctaveIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF8C0CF625C673350016FABF /* NoteIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF8C0CFA25C6736E0016FABF /* TwelveNotesIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelveNotesIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF8C0CFC25C6737E0016FABF /* LetterNamesIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterNamesIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF8C0CFE25C673940016FABF /* SemitoneIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemitoneIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF8C0D0125C687D70016FABF /* HarmonySliderPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonySliderPair.swift; sourceTree = "<group>"; };
+		EF8C0D0325C689830016FABF /* HarmonySliderPairInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonySliderPairInstrument.swift; sourceTree = "<group>"; };
+		EF8C0D0725C68D3C0016FABF /* PitchPlayerGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPlayerGroup.swift; sourceTree = "<group>"; };
+		EF8C0D0B25C68FBF0016FABF /* PitchPlayerGroupInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPlayerGroupInstrument.swift; sourceTree = "<group>"; };
 		EF8C1B9825AE79BA00EFA058 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		EF8C1B9D25AE94CE00EFA058 /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKit.xcframework; sourceTree = "<group>"; };
+		EF90F85625C8736D002435E8 /* NewScaleIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScaleIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF90F85825C881F9002435E8 /* MultipleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoice.swift; sourceTree = "<group>"; };
+		EF90F85B25C8865C002435E8 /* MultipleChoiceSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceSquare.swift; sourceTree = "<group>"; };
+		EF90F85D25C88A3C002435E8 /* ChordMultipleChoiceExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordMultipleChoiceExercise.swift; sourceTree = "<group>"; };
+		EF90F85F25C89699002435E8 /* ChordIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF90F86125C898FF002435E8 /* ScaleIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleIntroductionExercise.swift; sourceTree = "<group>"; };
+		EF9A5E5A25C0F26C00AC5EC6 /* woodblockNoDelay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = woodblockNoDelay.wav; sourceTree = "<group>"; };
+		EF9A5E5C25C0F27400AC5EC6 /* shakerNoDelay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shakerNoDelay.wav; sourceTree = "<group>"; };
+		EF9A5E5E25C1023F00AC5EC6 /* SoundExercise4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExercise4.swift; sourceTree = "<group>"; };
+		EF9A5E6025C1048D00AC5EC6 /* FormWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWheel.swift; sourceTree = "<group>"; };
 		EFA2B692259BA148008E4411 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFA5C64625782F4F00B981F7 /* SimpleMusicTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusicTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA5C64925782F4F00B981F7 /* SimpleMusicTheoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMusicTheoryApp.swift; sourceTree = "<group>"; };
@@ -98,11 +173,38 @@
 		EFA5C66225783F8600B981F7 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		EFA9120925B3D4D7000330BE /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		EFA9120B25B3D504000330BE /* PitchClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchClass.swift; sourceTree = "<group>"; };
+		EFA9B17F25C7D6F1002B467F /* NewBeatIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBeatIntroductionExercise.swift; sourceTree = "<group>"; };
+		EFA9B18225C7DF90002B467F /* NewChordIntroductionExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChordIntroductionExercise.swift; sourceTree = "<group>"; };
+		EFB90EDA25C3786C00977D5E /* SoundExercise3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExercise3.swift; sourceTree = "<group>"; };
+		EFB90EDD25C379D600977D5E /* RhythmToPitchSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmToPitchSlider.swift; sourceTree = "<group>"; };
+		EFB90EDF25C37DDB00977D5E /* RhythmToPitchInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmToPitchInstrument.swift; sourceTree = "<group>"; };
+		EFBD270925C490B5000892FF /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EFD3487F25B664630093C8B6 /* SemitonesExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemitonesExercise.swift; sourceTree = "<group>"; };
+		EFD90CC625C244A200FA4F29 /* SoundExercise2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExercise2.swift; sourceTree = "<group>"; };
+		EFD90CC825C2450600FA4F29 /* RhythmSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmSlider.swift; sourceTree = "<group>"; };
+		EFDFE63325BF9F03007E6D43 /* Rhythm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm.swift; sourceTree = "<group>"; };
+		EFDFE63525BFA20A007E6D43 /* RhythmKitInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmKitInstrument.swift; sourceTree = "<group>"; };
+		EFDFE63925BFA5A3007E6D43 /* RhythmKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmKit.swift; sourceTree = "<group>"; };
+		EFDFE63B25BFC3E4007E6D43 /* RhythmExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmExercise.swift; sourceTree = "<group>"; };
+		EFDFE63D25BFDDC7007E6D43 /* RhythmKitKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmKitKey.swift; sourceTree = "<group>"; };
 		EFE344DA25B3B50B00561D21 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		EFE344DE25B3BA5C00561D21 /* DescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionText.swift; sourceTree = "<group>"; };
 		EFE344E025B3BE7400561D21 /* ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F4A25BBBC320047895F /* SoundExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F4C25BBBCB50047895F /* TwelveNotesExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelveNotesExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F4E25BBBCC30047895F /* Rhythm1ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm1ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5025BBBCD20047895F /* Chord1ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord1ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5225BBBCDF0047895F /* Chord2ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord2ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5425BBBCF20047895F /* Scale1ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale1ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5625BBBD110047895F /* Chord3ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord3ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5825BBBD1E0047895F /* Rhythm3ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm3ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5A25BBBD2A0047895F /* Scale2ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale2ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5C25BBBD370047895F /* Chord4ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord4ExerciseGeneration.swift; sourceTree = "<group>"; };
+		EFEA6F5E25BBBE670047895F /* Rhythm2ExerciseGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm2ExerciseGeneration.swift; sourceTree = "<group>"; };
 		EFF903C725B2697F0035A793 /* ExerciseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseState.swift; sourceTree = "<group>"; };
+		EFFCF9F625BCF72F00AD9B87 /* ScaleExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleExercise.swift; sourceTree = "<group>"; };
+		EFFCF9F825BCF82300AD9B87 /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		EFFCF9FA25BCF83000AD9B87 /* ScaleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +223,10 @@
 			isa = PBXGroup;
 			children = (
 				EF1E408125B0F64300A46228 /* SoundExercise1.swift */,
+				EFD90CC625C244A200FA4F29 /* SoundExercise2.swift */,
+				EFB90EDA25C3786C00977D5E /* SoundExercise3.swift */,
+				EF9A5E5E25C1023F00AC5EC6 /* SoundExercise4.swift */,
+				EF722DCC25C1FEB2000A4AFE /* SoundExercise5.swift */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -128,10 +234,12 @@
 		EF2651DD25814904008736ED /* Exercise */ = {
 			isa = PBXGroup;
 			children = (
-				EFD3487F25B664630093C8B6 /* SemitonesExercise.swift */,
-				EF71C99B25B365F80006E7FF /* ChordExercise.swift */,
-				EF1E408025B0F62A00A46228 /* Sound */,
 				EFF903C725B2697F0035A793 /* ExerciseState.swift */,
+				EF1E408025B0F62A00A46228 /* Sound */,
+				EF8C0CED25C6726C0016FABF /* TwelveNotes */,
+				EFA9B17E25C7D6CD002B467F /* Rhythm */,
+				EFA9B18125C7DF7F002B467F /* Chord */,
+				EF90F85525C8734A002435E8 /* Scale */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -152,7 +260,7 @@
 				EF31F97F25813CBC007FD352 /* LessonType.swift */,
 				EF73095B25A7C382006EB4B9 /* LessonSummary.swift */,
 				EFE344DA25B3B50B00561D21 /* Lesson.swift */,
-				EFE344E025B3BE7400561D21 /* ExerciseGeneration.swift */,
+				EFEA6F4925BBBBED0047895F /* ExerciseGeneration */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -160,13 +268,18 @@
 		EF5BFC8025A7E2D200B8F809 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EFB90EDC25C3795600977D5E /* Sound */,
+				EF8C0D0025C687B50016FABF /* TwelveNotes */,
 				EF3F98FC25A9053400FC3BAC /* ProgressBar.swift */,
+				EFE344DE25B3BA5C00561D21 /* DescriptionText.swift */,
 				EF5BFC8625A7E31700B8F809 /* ContinueButton.swift */,
 				EF8C1B9825AE79BA00EFA058 /* CheckButton.swift */,
 				EF64F32C25B0FCD200BD39F1 /* Metronome.swift */,
 				EF12C2A525B60B0900356E9A /* Keyboard.swift */,
 				EF12C2A725B60B7800356E9A /* KeyboardKey.swift */,
-				EFE344DE25B3BA5C00561D21 /* DescriptionText.swift */,
+				EFDFE63925BFA5A3007E6D43 /* RhythmKit.swift */,
+				EFDFE63D25BFDDC7007E6D43 /* RhythmKitKey.swift */,
+				EF90F85A25C88611002435E8 /* MultipleChoice */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,10 +287,17 @@
 		EF64F32E25B15D2E00BD39F1 /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
-				EF71C9A125B370BB0006E7FF /* shaker.wav */,
+				EF39541625C0BC03009CF6DD /* shaker.wav */,
+				EF9A5E5C25C0F27400AC5EC6 /* shakerNoDelay.wav */,
+				EF39541825C0BC07009CF6DD /* woodblock.wav */,
+				EF9A5E5A25C0F26C00AC5EC6 /* woodblockNoDelay.wav */,
 				EF12C2A325B6089D00356E9A /* Instrument.swift */,
 				EF64F33125B15D9100BD39F1 /* MetronomeInstrument.swift */,
+				EFB90EDF25C37DDB00977D5E /* RhythmToPitchInstrument.swift */,
+				EF8C0D0325C689830016FABF /* HarmonySliderPairInstrument.swift */,
+				EF8C0D0B25C68FBF0016FABF /* PitchPlayerGroupInstrument.swift */,
 				EF12C2A125B6086900356E9A /* KeyboardInstrument.swift */,
+				EFDFE63525BFA20A007E6D43 /* RhythmKitInstrument.swift */,
 			);
 			path = Instruments;
 			sourceTree = "<group>";
@@ -187,8 +307,52 @@
 			children = (
 				EFA5C66225783F8600B981F7 /* ColorPalette.swift */,
 				EFA2B692259BA148008E4411 /* Extensions.swift */,
+				EFBD270925C490B5000892FF /* Functions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF8C0CED25C6726C0016FABF /* TwelveNotes */ = {
+			isa = PBXGroup;
+			children = (
+				EF8C0CF225C673190016FABF /* HarmonyIntroductionExercise.swift */,
+				EF8C0CF425C673270016FABF /* OctaveIntroductionExercise.swift */,
+				EF8C0CF625C673350016FABF /* NoteIntroductionExercise.swift */,
+				EF8C0CFA25C6736E0016FABF /* TwelveNotesIntroductionExercise.swift */,
+				EF8C0CFC25C6737E0016FABF /* LetterNamesIntroductionExercise.swift */,
+				EF8C0CFE25C673940016FABF /* SemitoneIntroductionExercise.swift */,
+				EF035D9525C77ADB00FEB3EB /* StandardKeyboardIntroductionExercise.swift */,
+				EFD3487F25B664630093C8B6 /* SemitonesExercise.swift */,
+			);
+			path = TwelveNotes;
+			sourceTree = "<group>";
+		};
+		EF8C0D0025C687B50016FABF /* TwelveNotes */ = {
+			isa = PBXGroup;
+			children = (
+				EF8C0D0125C687D70016FABF /* HarmonySliderPair.swift */,
+				EF8C0D0725C68D3C0016FABF /* PitchPlayerGroup.swift */,
+			);
+			path = TwelveNotes;
+			sourceTree = "<group>";
+		};
+		EF90F85525C8734A002435E8 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				EF90F86125C898FF002435E8 /* ScaleIntroductionExercise.swift */,
+				EF90F85625C8736D002435E8 /* NewScaleIntroductionExercise.swift */,
+				EFFCF9F625BCF72F00AD9B87 /* ScaleExercise.swift */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		EF90F85A25C88611002435E8 /* MultipleChoice */ = {
+			isa = PBXGroup;
+			children = (
+				EF90F85825C881F9002435E8 /* MultipleChoice.swift */,
+				EF90F85B25C8865C002435E8 /* MultipleChoiceSquare.swift */,
+			);
+			path = MultipleChoice;
 			sourceTree = "<group>";
 		};
 		EFA5C63D25782F4F00B981F7 = {
@@ -246,9 +410,62 @@
 				EFA9120B25B3D504000330BE /* PitchClass.swift */,
 				EF12C29D25B5FAAB00356E9A /* Chord.swift */,
 				EF12C29F25B5FB2700356E9A /* ChordType.swift */,
+				EFFCF9F825BCF82300AD9B87 /* Scale.swift */,
+				EFFCF9FA25BCF83000AD9B87 /* ScaleType.swift */,
 				EF12C2A925B61BA600356E9A /* Wavetables.swift */,
+				EFDFE63325BF9F03007E6D43 /* Rhythm.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		EFA9B17E25C7D6CD002B467F /* Rhythm */ = {
+			isa = PBXGroup;
+			children = (
+				EFA9B17F25C7D6F1002B467F /* NewBeatIntroductionExercise.swift */,
+				EFDFE63B25BFC3E4007E6D43 /* RhythmExercise.swift */,
+			);
+			path = Rhythm;
+			sourceTree = "<group>";
+		};
+		EFA9B18125C7DF7F002B467F /* Chord */ = {
+			isa = PBXGroup;
+			children = (
+				EF90F85F25C89699002435E8 /* ChordIntroductionExercise.swift */,
+				EFA9B18225C7DF90002B467F /* NewChordIntroductionExercise.swift */,
+				EF71C99B25B365F80006E7FF /* ChordExercise.swift */,
+				EF90F85D25C88A3C002435E8 /* ChordMultipleChoiceExercise.swift */,
+			);
+			path = Chord;
+			sourceTree = "<group>";
+		};
+		EFB90EDC25C3795600977D5E /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				EFD90CC825C2450600FA4F29 /* RhythmSlider.swift */,
+				EFB90EDD25C379D600977D5E /* RhythmToPitchSlider.swift */,
+				EF9A5E6025C1048D00AC5EC6 /* FormWheel.swift */,
+				EF722DCE25C20228000A4AFE /* HertzSpectrum.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		EFEA6F4925BBBBED0047895F /* ExerciseGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				EFE344E025B3BE7400561D21 /* ExerciseGeneration.swift */,
+				EFEA6F4A25BBBC320047895F /* SoundExerciseGeneration.swift */,
+				EFEA6F4C25BBBCB50047895F /* TwelveNotesExerciseGeneration.swift */,
+				EFEA6F4E25BBBCC30047895F /* Rhythm1ExerciseGeneration.swift */,
+				EFEA6F5E25BBBE670047895F /* Rhythm2ExerciseGeneration.swift */,
+				EFEA6F5025BBBCD20047895F /* Chord1ExerciseGeneration.swift */,
+				EFEA6F5225BBBCDF0047895F /* Chord2ExerciseGeneration.swift */,
+				EFEA6F5425BBBCF20047895F /* Scale1ExerciseGeneration.swift */,
+				EFEA6F5625BBBD110047895F /* Chord3ExerciseGeneration.swift */,
+				EFEA6F5825BBBD1E0047895F /* Rhythm3ExerciseGeneration.swift */,
+				EFEA6F5A25BBBD2A0047895F /* Scale2ExerciseGeneration.swift */,
+				EFEA6F5C25BBBD370047895F /* Chord4ExerciseGeneration.swift */,
+			);
+			path = ExerciseGeneration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,9 +526,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF71C9A225B370BB0006E7FF /* shaker.wav in Resources */,
+				EF39541925C0BC07009CF6DD /* woodblock.wav in Resources */,
 				EFA5C65125782F5000B981F7 /* Preview Assets.xcassets in Resources */,
+				EF39541725C0BC03009CF6DD /* shaker.wav in Resources */,
+				EF9A5E5D25C0F27400AC5EC6 /* shakerNoDelay.wav in Resources */,
 				EFA5C64E25782F5000B981F7 /* Assets.xcassets in Resources */,
+				EF9A5E5B25C0F26C00AC5EC6 /* woodblockNoDelay.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,40 +542,88 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB90EE025C37DDB00977D5E /* RhythmToPitchInstrument.swift in Sources */,
+				EF9A5E5F25C1023F00AC5EC6 /* SoundExercise4.swift in Sources */,
 				EF64F33225B15D9100BD39F1 /* MetronomeInstrument.swift in Sources */,
+				EF722DCD25C1FEB2000A4AFE /* SoundExercise5.swift in Sources */,
+				EF90F86225C898FF002435E8 /* ScaleIntroductionExercise.swift in Sources */,
+				EFB90EDB25C3786C00977D5E /* SoundExercise3.swift in Sources */,
+				EFDFE63A25BFA5A3007E6D43 /* RhythmKit.swift in Sources */,
+				EFEA6F5925BBBD1E0047895F /* Rhythm3ExerciseGeneration.swift in Sources */,
 				EF64F32D25B0FCD200BD39F1 /* Metronome.swift in Sources */,
+				EFDFE63425BF9F03007E6D43 /* Rhythm.swift in Sources */,
 				EF2DA6CF2583FD9C00634204 /* UserData.swift in Sources */,
+				EFDFE63E25BFDDC7007E6D43 /* RhythmKitKey.swift in Sources */,
+				EF8C0D0225C687D70016FABF /* HarmonySliderPair.swift in Sources */,
+				EFFCF9FB25BCF83000AD9B87 /* ScaleType.swift in Sources */,
+				EFA9B18325C7DF90002B467F /* NewChordIntroductionExercise.swift in Sources */,
+				EF90F85925C881F9002435E8 /* MultipleChoice.swift in Sources */,
 				EFA5C64C25782F4F00B981F7 /* ContentView.swift in Sources */,
 				EF12C2A425B6089D00356E9A /* Instrument.swift in Sources */,
+				EFB90EDE25C379D600977D5E /* RhythmToPitchSlider.swift in Sources */,
 				EFA5C65D257834B700B981F7 /* MainView.swift in Sources */,
+				EFEA6F5F25BBBE670047895F /* Rhythm2ExerciseGeneration.swift in Sources */,
+				EFEA6F5525BBBCF20047895F /* Scale1ExerciseGeneration.swift in Sources */,
+				EFEA6F4D25BBBCB50047895F /* TwelveNotesExerciseGeneration.swift in Sources */,
 				EFA5C660257834C900B981F7 /* LessonView.swift in Sources */,
 				EF12C29E25B5FAAB00356E9A /* Chord.swift in Sources */,
+				EFFCF9F925BCF82300AD9B87 /* Scale.swift in Sources */,
+				EFEA6F4B25BBBC320047895F /* SoundExerciseGeneration.swift in Sources */,
 				EF12C2A825B60B7800356E9A /* KeyboardKey.swift in Sources */,
+				EFD90CC925C2450600FA4F29 /* RhythmSlider.swift in Sources */,
+				EF722DCF25C20228000A4AFE /* HertzSpectrum.swift in Sources */,
+				EFEA6F5D25BBBD370047895F /* Chord4ExerciseGeneration.swift in Sources */,
+				EFEA6F5325BBBCE00047895F /* Chord2ExerciseGeneration.swift in Sources */,
 				EF504A042580360100CF6C22 /* PageState.swift in Sources */,
 				EF12C2AA25B61BA600356E9A /* Wavetables.swift in Sources */,
+				EF90F86025C89699002435E8 /* ChordIntroductionExercise.swift in Sources */,
 				EFD3488025B664630093C8B6 /* SemitonesExercise.swift in Sources */,
+				EFDFE63C25BFC3E4007E6D43 /* RhythmExercise.swift in Sources */,
 				EF31F98025813CBC007FD352 /* LessonType.swift in Sources */,
+				EFEA6F5B25BBBD2A0047895F /* Scale2ExerciseGeneration.swift in Sources */,
+				EFEA6F4F25BBBCC30047895F /* Rhythm1ExerciseGeneration.swift in Sources */,
 				EF71C99C25B365F80006E7FF /* ChordExercise.swift in Sources */,
 				EFE344DB25B3B50B00561D21 /* Lesson.swift in Sources */,
 				EFA5C65A2578308700B981F7 /* LaunchView.swift in Sources */,
+				EFBD270A25C490B5000892FF /* Functions.swift in Sources */,
 				EF5049FD25802C1400CF6C22 /* LessonGlyphView.swift in Sources */,
 				EF8C1B9925AE79BA00EFA058 /* CheckButton.swift in Sources */,
+				EFD90CC725C244A200FA4F29 /* SoundExercise2.swift in Sources */,
 				EF12C2A025B5FB2700356E9A /* ChordType.swift in Sources */,
 				EF3F98FD25A9053400FC3BAC /* ProgressBar.swift in Sources */,
+				EFA9B18025C7D6F1002B467F /* NewBeatIntroductionExercise.swift in Sources */,
 				EFE344E125B3BE7400561D21 /* ExerciseGeneration.swift in Sources */,
+				EFFCF9F725BCF72F00AD9B87 /* ScaleExercise.swift in Sources */,
+				EF8C0CFD25C6737E0016FABF /* LetterNamesIntroductionExercise.swift in Sources */,
 				EF1E408225B0F64300A46228 /* SoundExercise1.swift in Sources */,
 				EFF903C825B2697F0035A793 /* ExerciseState.swift in Sources */,
 				EFE344DF25B3BA5C00561D21 /* DescriptionText.swift in Sources */,
 				EFA9120C25B3D504000330BE /* PitchClass.swift in Sources */,
 				EFA5C64A25782F4F00B981F7 /* SimpleMusicTheoryApp.swift in Sources */,
 				EF12C2A625B60B0900356E9A /* Keyboard.swift in Sources */,
+				EFEA6F5725BBBD110047895F /* Chord3ExerciseGeneration.swift in Sources */,
+				EFEA6F5125BBBCD20047895F /* Chord1ExerciseGeneration.swift in Sources */,
 				EFA2B693259BA148008E4411 /* Extensions.swift in Sources */,
 				EFA9120A25B3D4D7000330BE /* Note.swift in Sources */,
 				EFA5C66325783F8600B981F7 /* ColorPalette.swift in Sources */,
+				EF035D9625C77ADB00FEB3EB /* StandardKeyboardIntroductionExercise.swift in Sources */,
 				EF73095C25A7C382006EB4B9 /* LessonSummary.swift in Sources */,
+				EF8C0D0C25C68FBF0016FABF /* PitchPlayerGroupInstrument.swift in Sources */,
+				EF90F85E25C88A3C002435E8 /* ChordMultipleChoiceExercise.swift in Sources */,
+				EF8C0CF525C673270016FABF /* OctaveIntroductionExercise.swift in Sources */,
+				EF90F85C25C8865C002435E8 /* MultipleChoiceSquare.swift in Sources */,
+				EF90F85725C8736D002435E8 /* NewScaleIntroductionExercise.swift in Sources */,
 				EF64F33425B1626C00BD39F1 /* AudioManager.swift in Sources */,
+				EF8C0D0425C689830016FABF /* HarmonySliderPairInstrument.swift in Sources */,
+				EF9A5E6125C1048D00AC5EC6 /* FormWheel.swift in Sources */,
+				EF8C0D0825C68D3C0016FABF /* PitchPlayerGroup.swift in Sources */,
+				EF8C0CF325C673190016FABF /* HarmonyIntroductionExercise.swift in Sources */,
 				EF12C2A225B6086900356E9A /* KeyboardInstrument.swift in Sources */,
+				EF8C0CF725C673350016FABF /* NoteIntroductionExercise.swift in Sources */,
+				EF8C0CFB25C6736E0016FABF /* TwelveNotesIntroductionExercise.swift in Sources */,
 				EF5BFC8725A7E31700B8F809 /* ContinueButton.swift in Sources */,
+				EFDFE63625BFA20A007E6D43 /* RhythmKitInstrument.swift in Sources */,
+				EF8C0CFF25C673940016FABF /* SemitoneIntroductionExercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +753,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleMusicTheory/Preview Content\"";
+				DEVELOPMENT_TEAM = AF6W8QRL4J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SimpleMusicTheory/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -507,6 +776,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleMusicTheory/Preview Content\"";
+				DEVELOPMENT_TEAM = AF6W8QRL4J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SimpleMusicTheory/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
