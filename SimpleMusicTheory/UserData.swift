@@ -15,6 +15,7 @@ class UserData: ObservableObject {
     @AppStorage(wrappedValue: false, "postFirstLaunch") var postFirstLaunch: Bool
     
     @AppStorage(wrappedValue: 0, "sessionNumber") var sessionNumber: Int
+    @AppStorage(wrappedValue: false, "reviewRequested") var reviewRequested: Bool
     
     @AppStorage(wrappedValue: 1, "lessonRow") var lessonRow: Int
     

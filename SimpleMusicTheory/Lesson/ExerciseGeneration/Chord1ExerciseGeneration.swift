@@ -15,24 +15,47 @@ extension LessonView {
         // Introduce major chord type
         exercises.append(AnyView(NewChordIntroductionExercise(chordType: .major, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
 
-        // Practice major by walking through every major chromatically
-        for pitchClass in PitchClass.allCases {
-            exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: pitchClass, chordType: .major), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
-        }
+        // Practice C major chord, reviewing constituent semitone gaps
+        exercises.append(AnyView(SemitonesExercise(isFlatLayout: false, root: .c, semitoneGap: 0, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesExercise(isFlatLayout: false, root: .c, semitoneGap: 4, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesExercise(isFlatLayout: false, root: .c, semitoneGap: 7, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .c, chordType: .major), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        
+        // Practice D major chord, reviewing constituent semitone gaps
+        exercises.append(AnyView(SemitonesExercise(isFlatLayout: false, root: .d, semitoneGap: 0, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesExercise(isFlatLayout: false, root: .d, semitoneGap: 4, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesExercise(isFlatLayout: false, root: .d, semitoneGap: 7, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .d, chordType: .major), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
         endSection()
 
         // Introduce minor chord type
         exercises.append(AnyView(NewChordIntroductionExercise(chordType: .minor, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
         
-        // Practice major seventh 4 times
-        // Cm
+        // Practice Cm chord, reviewing constituent semitone gaps
+        exercises.append(AnyView(SemitonesMultipleChoiceExercise(root: .c, semitoneGap: 0, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesMultipleChoiceExercise(root: .c, semitoneGap: 3, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesMultipleChoiceExercise(root: .c, semitoneGap: 7, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
         exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .c, chordType: .minor), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
-        // Em
-        exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .e, chordType: .minor), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
-        // Gm
-        exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .g, chordType: .minor), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
-        // A#m
-        exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .aSharp, chordType: .minor), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        
+        // Practice G#m chord, reviewing constituent semitone gaps
+        exercises.append(AnyView(SemitonesMultipleChoiceExercise(root: .gSharp, semitoneGap: 0, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesMultipleChoiceExercise(root: .gSharp, semitoneGap: 3, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(SemitonesMultipleChoiceExercise(root: .gSharp, semitoneGap: 7, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        endSection()
+        exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .gSharp, chordType: .minor), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
         endSection()
 
         // Assorted multiple choice

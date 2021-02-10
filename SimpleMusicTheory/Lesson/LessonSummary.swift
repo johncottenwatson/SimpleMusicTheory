@@ -25,9 +25,9 @@ let lessonSummaries: [LessonSummary] =
      LessonSummary(lesson: .chord2, type: .pitch, row: 4),
      LessonSummary(lesson: .scale1, type: .pitch, row: 4),
      
-     LessonSummary(lesson: .chord3, type: .pitch, row: 5),
      LessonSummary(lesson: .rhythm3, type: .rhythm, row: 5),
+     LessonSummary(lesson: .chord3, type: .pitch, row: 5),
      
-     LessonSummary(lesson: .scale2, type: .pitch, row: 6),
-     LessonSummary(lesson: .chord4, type: .pitch, row: 6)
+     LessonSummary(lesson: .chord4, type: .pitch, row: 6),
+     LessonSummary(lesson: .scale2, type: .pitch, row: 6)
     ]

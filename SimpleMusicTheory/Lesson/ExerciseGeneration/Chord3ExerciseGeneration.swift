@@ -30,7 +30,7 @@ extension LessonView {
         endSection()
         
         // Introduce suspended fourth chord type
-        exercises.append(AnyView(NewChordIntroductionExercise(chordType: .suspendedSecond, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
+        exercises.append(AnyView(NewChordIntroductionExercise(chordType: .suspendedFourth, exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))
         
         // Practice suspended fourth 4 times
         exercises.append(AnyView(ChordExercise(isFlatLayout: false, chord: Chord(root: .c, chordType: .suspendedFourth), exerciseState: $exerciseState, exerciseCorrect: $exerciseCorrect)))

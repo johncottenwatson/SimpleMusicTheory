@@ -19,10 +19,10 @@ public class HarmonySliderPairInstrument: Instrument {
     
     public init(frequency1: Double, frequency2: Double) {
         osc1 = AKOscillator(waveform: Wavetables.triangle, frequency: frequency1, amplitude: 0.0)
-        osc1.rampDuration = 0.01
+        osc1.rampDuration = 0.25
         
         osc2 = AKOscillator(waveform: Wavetables.triangle, frequency: frequency2, amplitude: 0.0)
-        osc2.rampDuration = 0.01
+        osc2.rampDuration = 0.25
 
         mixer = AKMixer()
         mixer.connect(input: osc1)
@@ -36,23 +36,26 @@ public class HarmonySliderPairInstrument: Instrument {
 
     public func updateOsc1(frequency: Double) {
         osc1.frequency = frequency
-        osc1.amplitude = 0.05 * normalizingFactor(frequency: frequency)
+        osc1.amplitude = normalizingFactor(frequency: frequency)
     }
     
     public func updateOsc2(frequency: Double) {
         osc2.frequency = frequency
-        osc2.amplitude = 0.05 * normalizingFactor(frequency: frequency)
+        osc2.amplitude = normalizingFactor(frequency: frequency)
     }
     
+    // Oscillators start out silent and are
     public override func start() {
         AudioManager.mainMixer.connect(input: booster)
-        booster.gain = 1.0
-        
-        osc1.amplitude = 0.05 * normalizingFactor(frequency: 400.0)
-        osc2.amplitude = 0.05 * normalizingFactor(frequency: 400.0)
+        booster.gain = boosterGain
 
         osc1.start()
         osc2.start()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            self.osc1.amplitude = normalizingFactor(frequency: 400.0)
+            self.osc2.amplitude = normalizingFactor(frequency: 400.0)
+        }
     }
     
     public override func stop() {

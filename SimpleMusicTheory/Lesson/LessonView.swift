@@ -51,6 +51,11 @@ struct LessonView: View {
         // Mark lesson complete
         userData.markLessonCompleted(lesson: self.lesson)
         pageState.pageType = .main
+        // If completing rhythm2 and without having previously requested review, request review
+        if self.lesson == .rhythm2 && !userData.reviewRequested {
+            StoreReviewManager.requestReview()
+            userData.reviewRequested = true
+        }
     }
 
     var body: some View {

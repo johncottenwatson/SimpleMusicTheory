@@ -129,7 +129,7 @@ public enum ChordType {
         case .minorSeventh:
             return "a jazzy chord type that sounds like a softer version of a minor chord"
         case .dominantSeventh:
-            return "an unstable chord type that wants to be resolved into a more consonant chord"
+            return "an unstable chord type that likes to be resolved into a more consonant chord"
         case .suspendedSecond:
             return "another simple chord type with a somewhat ambiguous feeling"
         case .suspendedFourth:
